@@ -7,8 +7,9 @@ app = FastAPI(title="Personal Diary API")
 
 @app.get("/")
 def home():
-    return {"message": "Diary API running"}
+    return {"message": "Diary Dairy API running"}
 
 
 app.include_router(auth_router)
+
 app.include_router(diary_router)
